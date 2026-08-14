@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">Mrunal.</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Synapse Interview: Technical Task 1</h1>
+    <main>
+
+        <section id="home">
+            <h2>Introduction</h2>
+            <p>My name is Mrunal Gupte, a 19-year-old Computer Engineering student at DJ Sanghvi with a passion for
+                building smart, performance-driven software.</p>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>My work sits at the intersection of core computer science
+                fundamentals and creative execution, whether that's engineering object-oriented systems in Java, working
+                through applied mathematical logic, or building applications with Java Swing like the Tic-Tac-Toe game. I love figuring out how
+                complex systems work under the hood, and I'm eager to bring that technical grit and drive to the team.
+            </p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-card">
+                <h3>Tic-Tac-Toe (Swing)</h3>
+                <p>An interactive desktop application built using Java Swing to demonstrate event-driven programming and
+                    core Object-Oriented principles.
+                <ul>
+                    <li>Engineered an event-driven GUI using BorderLayout and a 3x3 GridLayout with responsive
+                        ActionListener components.</li>
+                    <li>Implemented real-time game state management, including vector win detection across 8 conditions
+                        and draw checking.</li>
+
+                </ul>
+                </p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <p>
+                Driven by a strong foundation in Computer Engineering principles, my skill set combines backend development in Java with desktop application architecture using Tauri, HTML/CSS, and JavaScript. I enjoy applying mathematical logic and algorithmic thinking to solve complex technical problems, optimize software performance, and build clean user experiences.
+            </p>
+            <ul>
+                <li>Java / OOP</li>
+                <li>HTML and CSS</li>
+                <li>Engineering Drawing</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <form action="/submit.php">
+                <div #x1>
+                    <label for="name">Name</label>
+                    <input id="name" type="text" placeholder="Enter your Name here.">
+                </div>
+
+                <div #x2>
+                    <label for="phone">Phone</label>
+                    <input id="phone" type="tel" placeholder="Enter your Phone No.">
+                </div>
+
+                <div #x3>
+                    <label for="email">E-mail</label>
+                    <input id="email" type="email" placeholder="Enter your E-mail here.">
+                </div>
+
+                <div #x4>
+                    <label for="address">Address: </label>
+                    <textarea id="address" placeholder="Enter your Address here." rows="4"></textarea>
+                </div>
+
+                <div #x5>
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>

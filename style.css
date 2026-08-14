@@ -1,0 +1,213 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #0a1930;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #38bdf8;
+    /* Highlight color */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("PortfolioBG.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: anim;
+    animation-duration: 0.25s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    color: #0A1930;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    font-style: bold;
+    font-family: "Orbitron", sans-serif;
+
+    transform: translateY(35px);
+}
+
+h2 {
+    text-align: center;
+    margin-top: 50px;
+    font-style: bold;
+    font-family: "Orbitron", sans-serif;
+
+    transform: translateY(35px);
+}
+
+p {
+    text-align: left;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    margin-top: 20px;
+    border-left: 5px solid #071a85;
+    border-radius: 4px;
+    padding: 16px;
+    transform: translateY(10px);
+}
+
+h3 {
+    transform: translateY(20px);
+}
+
+li {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+}
+
+@keyframes anim {
+    from {
+        margin-left: 10%;
+    }
+
+    to {
+        margin-left: 0%;
+    }
+}
+
+
+
+/* Contact Section Base */
+#contact {
+    padding: 4rem 2rem;
+    max-width: 600px;
+    /* Keeps the form neatly centered */
+    margin: 0 auto;
+}
+
+#contact h2 {
+    font-size: 2rem;
+    color: #1e293b;
+    /* White section title */
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* Form Container */
+#contact form {
+    background-color: #1e293b;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid #334155;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+/* Form Group Layout */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/* Labels (Name, Phone, E-mail, Address) in pure white */
+#contact label {
+    color: #ffffff;
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+/* Inputs & Textarea Typed Text in White */
+.form-group input,
+.form-group textarea {
+    background-color: #0f172a;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    color: #ffffff;
+    /* Typed text color */
+    font-family: inherit;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Placeholder Text in White (with slight opacity so it looks like placeholder) */
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* Focus State (Blue Accent Glow) */
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #38bdf8;
+    box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.2);
+}
+
+/* Textarea Resizing */
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Submit Button Container */
+.btn-container {
+    margin-top: 0.5rem;
+}
+
+/* Submit Button */
+#contact button[type="submit"] {
+    background-color: #0284c7;
+    color: #ffffff;
+    /* White button text */
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+#contact button[type="submit"]:hover {
+    background-color: #0369a1;
+}
+
+#contact button[type="submit"]:active {
+    transform: scale(0.98);
+}
